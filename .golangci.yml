@@ -1,0 +1,14 @@
+linters-settings:
+  staticcheck:
+    checks:
+      - all
+      - '-SA5001' # disable 'should check returned error before deferring f.Close()'
+
+  depguard:
+    rules:
+      main:
+        deny:
+          - pkg: "log"
+            desc: use brightly.GetLogger() instead
+          - pkg: "github.com/pkg/errors"
+            desc: use github.com/go-errors/errors instead

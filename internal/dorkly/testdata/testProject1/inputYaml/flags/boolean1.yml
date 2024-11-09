@@ -1,0 +1,4 @@
+type: boolean
+description: "Human-readable description of the flag."
+enableBrowser: true
+enableMobileKey: true
